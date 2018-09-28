@@ -6,7 +6,7 @@ import store from './store/store'
 import Buefy from 'buefy'
 import './assets/scss/app.scss'
 
-Vue.use(Buefy)
+Vue.use(Buefy, { defaultIconPack: 'fa' })
 
 Vue.config.productionTip = false
 
