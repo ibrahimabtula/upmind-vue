@@ -10,17 +10,8 @@ npm install
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## Please run commands above and paste to your browser the following link http://localhost:8080/
 
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
+### Comments
+* Project is scaffolder with vue-cli 3
+* Because the API doesn't provide 'total' for the result set pagination always shows 5 pages
