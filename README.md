@@ -1,7 +1,7 @@
 # upmind-vue
 
 ## Project setup
-Navigate to the project folder and run the following thow commands
+Navigate to the project folder and run the following two commands
 ```
 npm install
 ```
