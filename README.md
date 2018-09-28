@@ -5,8 +5,6 @@ Navigate to the project folder and run the following two commands
 ```
 npm install
 ```
-
-### Compiles and hot-reloads for development
 ```
 npm run serve
 ```
