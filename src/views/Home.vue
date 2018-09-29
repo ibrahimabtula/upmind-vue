@@ -3,7 +3,7 @@
     <img alt="Vue logo" src="../assets/logo.png">
     <div class="columns">
       <div class="column is-8 is-offset-2">
-        <MainTable/>
+        <Clients/>
       </div>
     </div>
   </div>
@@ -11,12 +11,12 @@
 
 <script>
 // @ is an alias to /src
-import MainTable from '@/components/MainTable.vue'
+import Clients from '@/components/Clients.vue'
 
 export default {
   name: 'home',
   components: {
-    MainTable
+    Clients
   }
 }
 </script>

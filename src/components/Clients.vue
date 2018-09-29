@@ -1,7 +1,7 @@
 <template>
     <section>
         <b-field label="Search">
-            <b-input v-model="search"></b-input>
+            <b-input v-model="search" :loading="$store.state.client.loading"></b-input>
         </b-field>
 
         <b-table
@@ -13,6 +13,7 @@
             backend-pagination
             :total="total"
             :per-page="perPage"
+            :current-page="page"
             @page-change="onPageChange"
             backend-sorting
             :default-sort-direction="defaultSortOrder"
@@ -56,6 +57,8 @@ export default {
     },
     watch:{
         search(){
+            // Go back to first page because if we stay in page 4 for example but have only 10 result table will look empty
+            this.page = 1;
             this.loadAsyncData();
         }
     },
