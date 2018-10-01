@@ -1,3 +1,4 @@
+import { getField, updateField } from 'vuex-map-fields';
 import clientAPI from '../../api/client'
 
 // initial state
@@ -8,6 +9,7 @@ const state = {
 
 // getters
 const getters = {
+  getField,
 }
 
 // actions
@@ -31,6 +33,7 @@ const actions = {
 
 // mutations
 const mutations = {
+  updateField,
   setClients (state, clients ) {
     state.clients = clients
   },

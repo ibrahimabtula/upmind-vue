@@ -5,8 +5,8 @@
         </b-field>
 
         <b-table
-            :data="$store.state.client.clients"
-            :loading="$store.state.client.loading"
+            :data="clients"
+            :loading="loading"
             :striped="true"
 
             paginated
@@ -39,6 +39,8 @@
 </template>
 
 <script>
+import { mapFields } from 'vuex-map-fields';
+
 export default {
     created(){
         this.loadAsyncData();
@@ -46,7 +48,6 @@ export default {
     data(){
         return{
             search: null,
-            loading: false,
             total: 50,
             perPage: 10,
             page: 1,
@@ -54,6 +55,12 @@ export default {
             sortField: 'first_name',
             sortOrder: 'asc'
         }
+    },
+    computed:{
+        ...mapFields('client',[
+        'clients',
+        'loading',
+        ])
     },
     watch:{
         search(){
