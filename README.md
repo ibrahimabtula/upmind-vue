@@ -9,7 +9,7 @@ npm install
 npm run serve
 ```
 
-## Please run commands above and paste to your browser the following link http://localhost:8080/
+## Please run commands above and paste into your browser the following link http://localhost:8080/
 
 ### Comments
 * Project is scaffolder with vue-cli 3
